@@ -129,7 +129,7 @@ body {
 
     #panel h1 {
         font-size: 20px;
-        padding-top: 15px;
+        padding: 15px 5px 0 5px;
         padding-bottom: 0;
     }
 
