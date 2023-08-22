@@ -1,11 +1,6 @@
 let sc = document.getElementById("score");
 let hit = document.getElementById("hit");
-//let highscore = document.getElementById("highscore");
 let scoreval = 0;
-// let highscoreval = localStorage.getItem("score");
-// highscoreval > 0
-//   ? (highscore.innerText = highscoreval)
-//   : (highscore.innerText = 0);
 let rn;
 let cnt = 60;
 let gameIsOver = false;
@@ -66,15 +61,7 @@ panel.addEventListener("click", (id) => {
 function endGame() {
   gameIsOver = true;
   panel.innerHTML = `<h2 id="panelbottom" class="gameover">Game Over! <br />Refresh the page to start a new game</h2>`;
-  // if (highscoreval > scoreval) {
-  //   localStorage.setItem("score", highscoreval);
-  // }
-  // getHighScore();
 }
-
-// function getHighScore() {
-//   highscore.innerText = highscoreval;
-// }
 
 setTimeout(endGame, 60000);
 
